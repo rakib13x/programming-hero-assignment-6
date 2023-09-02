@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+
+</head>
+<body>
+    <div class="border-b border-black mx-20 mb-6">
+        <h2 class="flex items-center justify-center pt-10 border-b border-black">Question No. 1</h2>
+        <div class="mx-20 pt-8 space-y-3">
+            <p>Question: Discuss the scope of var, let, and const</p>
+            <p class="text-3xl">Answer: </p>
+            <ul class="space-y-2">
+                <li><span class="text-xl">var</span> : var is function-scoped and hoisted. It allows redeclaration and reassignment.</li>
+                <li><span class="text-xl">let</span> : let is block-scoped, hoisted, and allows reassignment but not redeclaration.</li>
+                <li class="pb-6"><span class="text-xl">const</span> : const is block-scoped, hoisted, and does not allow reassignment but allows modification of object properties or array elements.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="border-b border-black mx-20 mb-6">
+        <h2 class="flex items-center justify-center pt-10 border-b border-black">Question No. 2</h2>
+        <div class="mx-20 pt-8 space-y-3">
+            <p>Question:Tell us the use cases of null and undefined</p>
+            <p class="text-3xl">Answer: </p>
+            <ul class="space-y-2 pb-8">
+                <li><span class="text-xl">Undefined:</span></li>
+                <li><span class="text-xl">Return Value</span> : If a function doesn't explicitly return a value, it implicitly returns undefined.</li>
+                <li class="pb-6"><span class="text-xl">Here's an Example:</span></li>
+                <p>
+                    <p>function noReturn() {</p>
+                        <p>// This function has no return statement</p>
+                      }
+                      
+                      <p>const result = noReturn();</p>
+                     <p>console.log(result); // Outputs: undefined</p>
+                </p>
+                <li><span class="text-xl">Null:</span></li>
+                <li><span class="text-xl border-b">Resetting Values</span> : You can set a variable or object property to null to indicate that it should no longer reference any meaningful value.</li>
+                <li class="pb-6"><span class="text-xl">Here's an Example:</span></li>
+                <p>let x = null; // x explicitly has no value</p>
+                <p>const obj = {</p>
+                <p>property: null // Explicitly setting a property to null</p>
+                    };
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="border-b border-black mx-20 mb-6">
+        <h2 class="flex items-center justify-center pt-10 border-b border-black">Question No. 3</h2>
+        <div class="mx-20 pt-8 space-y-3">
+
+            <div class="mx-20 pt-8 space-y-3">
+                <p>Question:What do you mean by REST API?</p>
+                <p class="text-3xl">Answer: </p>
+                <ul class="space-y-2 pb-8">
+                    <li><span class="text-xl">Rest API:</span></li>
+                    
+                    <p>
+                        REST API, which stands for Representational State Transfer Application Programming Interface, is an architectural style for designing networked applications. It is a set of constraints and principles used to create web services that are scalable, maintainable, and can easily interact with one another over the internet 
+                    </p>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

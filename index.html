@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph-Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+    <!-- Add your custom CSS if needed -->
+</head>
+<body class="mx-6 space-y-11">
+    
+<nav class="border-b border-gray-400 pb-[2rem] pb-8">
+    <div class="navbar bg-gray-50 gap-4 justify-between items-center">
+        <div class="flex-grow">
+           <a href="/">
+            <img src="./images/Logo.png" alt="">
+           </a>
+        </div>
+        <div class="flex-grow flex justify-center">
+            <button id="sort-by-view" class="text-black bg-gray-300 h-[4rem] w-100% px-5 font-semibold text-sm rounded md:h-8 md:text-xl">Sort by view</button>
+        </div>
+        <div class="flex-grow flex justify-end">
+            <button class=" bg-red-600 text-white h-auto w-100% px-3 rounded md:h-10 md:text-xl">
+                <a href="./blog.html">Blog</a>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<section>
+    <div id="category" class="flex items-center justify-center gap-5 md:gap-8 lg:gap-10">
+        <!-- Dynamic category buttons will be generated here -->
+    </div>
+</section>
+
+<main>
+    <section class="">
+        <div id="no-videos-message" class="hidden flex flex-col items-center justify-center space-y-10 p-10">
+            <img src="./images/Icon.png" alt="">
+            <p class="text-black text-3xl font-bold ml-7">Oops!! Sorry, There is no <br>content here</p>
+        </div>
+        <div id="video-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Video cards will be generated here -->
+        </div>
+    </section>
+</main>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
