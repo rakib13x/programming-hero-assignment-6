@@ -60,7 +60,7 @@ const displayVideos = (videos) => {
                   ? '<img src="./images/Group 3.png" alt="Verified Icon" class="inline-block">'
                   : ""
               }
-              <p class="pt-3" id="${viewId}">${views}</p>
+              <p class="pt-3 sort-card" id="${viewId}">${views}</p>
           </div>
       </div>
     `;
@@ -73,8 +73,8 @@ const displayVideos = (videos) => {
     const videoCardsArray = Array.from(videoContainer.children);
 
     videoCardsArray.sort((a, b) => {
-      const viewA = parseInt(b.querySelector(".pt-3").textContent); // Use class instead of ID
-      const viewB = parseInt(a.querySelector(".pt-3").textContent); // Use class instead of ID
+      const viewA = parseInt(b.querySelector(".sort-card").textContent);
+      const viewB = parseInt(a.querySelector(".sort-card").textContent);
       return viewA - viewB;
     });
 
